@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Design Systems</h5>
+            <p class="small">Create consistent UI language and reusable components.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Web Development</h5>
+            <p class="small">Front-end with Bootstrap and React, back-end with Flask.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Product Strategy</h5>
+            <p class="small">Prioritization and roadmaps for product-market fit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 text-center">
+      <a href="/contact" class="btn btn-primary">Discuss a project</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

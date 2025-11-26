@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('contact') }}" method="post" class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name *</label>
+        <input type="text" id="name" name="name" class="form-control" required aria-required="true" />
+        <div class="invalid-feedback">Please provide your name.</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email *</label>
+        <input id="email" name="email" type="email" class="form-control" required aria-required="true" />
+        <div class="invalid-feedback">Please provide a valid email.</div>
+      </div>
+
+      <div class="col-12">
+        <label for="subject" class="form-label">Subject</label>
+        <input id="subject" name="subject" type="text" class="form-control" />
+      </div>
+
+      <div class="col-12">
+        <label for="message" class="form-label">Message *</label>
+        <textarea id="message" name="message" class="form-control" rows="5" required aria-required="true"></textarea>
+        <div class="invalid-feedback">Please write a message.</div>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}

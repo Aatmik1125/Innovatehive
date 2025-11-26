@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO -->
+<section class="hero-section d-flex align-items-center" aria-label="Hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bold hero-title">Design. Build. Launch — Innovate with Impact</h1>
+        <p class="lead">We craft product-first digital experiences that delight users and drive business growth.</p>
+        <p>
+          <a class="btn btn-primary btn-lg me-2" href="/services">Our Services</a>
+          <a class="btn btn-outline-secondary btn-lg" href="/projects">See Projects</a>
+        </p>
+
+        <ul class="list-unstyled d-flex gap-3 mt-4 small">
+          <li><strong>UI/UX</strong> design</li>
+          <li><strong>Web</strong> & mobile</li>
+          <li><strong>Product</strong> thinking</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 d-none d-md-block">
+        <div class="hero-image" role="img" aria-label="Illustration showing product design">
+          <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Hero illustration" class="img-fluid shadow-lg rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section id="about-preview" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2">
+        <h2>About InnovateHive</h2>
+        <p class="mb-3">We help startups and enterprises ideate, design, and ship user-centered digital products quickly.</p>
+        <a href="/about" class="link-primary">Read more →</a>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="{{ url_for('static', filename='images/about-illustration.jpg') }}" alt="About illustration" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section id="services-preview" class="py-5">
+  <div class="container">
+    <h3 class="mb-4 text-center">Services we offer</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-rocket fa-2x mb-3"></i>
+            <h5 class="card-title">Product Design</h5>
+            <p class="card-text small">User research, prototypes, and delightful interfaces.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-code fa-2x mb-3"></i>
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text small">Modern, responsive frontends and Flask backends.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-chart-line fa-2x mb-3"></i>
+            <h5 class="card-title">Growth & Strategy</h5>
+            <p class="card-text small">Product-first approaches and rapid experimentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a class="btn btn-outline-primary" href="/services">Explore all services</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section id="projects-preview" class="py-5 bg-white">
+  <div class="container">
+    <h3 class="mb-4 text-center">Selected Projects</h3>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <article class="project-card d-flex gap-3 align-items-center">
+          <img src="{{ url_for('static', filename='images/project1.jpg') }}" alt="Project 1" class="rounded project-thumb">
+          <div>
+            <h5>Project One — eCommerce redesign</h5>
+            <p class="small">A conversion-focused redesign for an eCommerce product.</p>
+            <a href="/projects" class="small">View project →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6">
+        <article class="project-card d-flex gap-3 align-items-center">
+          <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Project 2" class="rounded project-thumb">
+          <div>
+            <h5>Project Two — Analytics dashboard</h5>
+            <p class="small">Complex data visualizations made simple and usable.</p>
+            <a href="/projects" class="small">View project →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="testimonials-preview" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="mb-4 text-center">What our clients say</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <blockquote class="blockquote p-3 bg-white shadow-sm">
+          <p class="mb-1">"The team shipped quickly and remained user-focused."</p>
+          <footer class=" small">— Product Lead, Fintech</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote p-3 bg-white shadow-sm">
+          <p class="mb-1">"Great communication and strong design thinking."</p>
+          <footer class=" small">— Founder, MarketPlace</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote p-3 bg-white shadow-sm">
+          <p class="mb-1">"Clear prioritization and reliable delivery."</p>
+          <footer class=" small">— CTO, SaaS</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 cta-section text-white" aria-label="Call to action">
+  <div class="container text-center">
+    <h4 class="mb-3">Ready to build something great?</h4>
+    <a href="/contact" class="btn btn-lg btn-light">Get in touch</a>
+  </div>
+</section>
+
+{% endblock %}

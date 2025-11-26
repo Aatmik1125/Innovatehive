@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="InnovateHive logo" width="40" height="40" class="me-2" onerror="this.style.display='none'">
+      <span class="brand-title">InnovateHive</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blogs">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="/testimonials">Clients</a></li>
+        <li class="nav-item ms-2"><a class="btn btn-primary btn-sm" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Projects</h2>
+    <div class="row g-4">
+      <!-- Project card -->
+      <div class="col-md-4">
+        <article class="card project-full h-100">
+          <img src="{{ url_for('static', filename='images/project1.jpg') }}" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">eCommerce Redesign</h5>
+            <p class="card-text small">UX improvements + A/B testing for conversion uplift.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="card project-full h-100">
+          <img src="{{ url_for('static', filename='images/project2.jpg') }}" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Analytics Dashboard</h5>
+            <p class="card-text small">Data visuals and an intuitive exploration flow.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="card project-full h-100">
+          <img src="{{ url_for('static', filename='images/project1.jpg') }}" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Mobile App Prototype</h5>
+            <p class="card-text small">Clickable prototypes and user testing.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
